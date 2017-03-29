@@ -61,6 +61,11 @@ Prepare your Makefile.config and compile.
     $ bash save_scores_alex_ratio_subclass.sh test perturbed  
 
 ### 6. Do retrievals
+   Download train.csv and val.csv.  
+
+    $ wget http://vision.princeton.edu/ms/shrec17-data/train.csv  
+    $ wget http://vision.princeton.edu/ms/shrec17-data/val.csv  
+
 ####  Main results
     $ python classify_dir_and_save.py classes.txt results_alex train normal Alex  
     $ python classify_dir_and_save.py classes.txt results_alex train perturbed Alex  

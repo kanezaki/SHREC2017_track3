@@ -17,10 +17,10 @@ if len(sys.argv) > 5:
 # read sample info. #
 #####################
 
-f = open('test_normal.txt')
+f = open('TXT/test_normal.txt')
 lines = f.readlines()
 f.close()
-mid  = [l.split('_')[-2] for l in lines]
+mid  = [l.split('/')[-1].split('_')[0] for l in lines]
 mid = mid[::20]
 mid = numpy.array(mid)
 
