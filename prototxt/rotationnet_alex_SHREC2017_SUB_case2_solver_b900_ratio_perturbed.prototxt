@@ -1,0 +1,15 @@
+train_net: "prototxt/rotationnet_alex_SHREC2017_SUB_case2_train_b900_ratio_perturbed.prototxt"
+test_net: "prototxt/rotationnet_alex_SHREC2017_SUB_case2_val_perturbed.prototxt"
+test_iter: 177
+test_interval: 1000
+base_lr: 0.001
+lr_policy: "step"
+gamma: 0.1
+stepsize: 2000000
+display: 20
+max_iter: 80000
+momentum: 0.9
+weight_decay: 0.0005
+snapshot: 1000
+snapshot_prefix: "./models/rotationnet_alex_SHREC2017_SUB_case2_b900_ratio_perturbed"
+device_id: 3
